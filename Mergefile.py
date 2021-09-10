@@ -11,7 +11,7 @@ import os
 # Reference: https://cloud.tencent.com/developer/article/1742319
 # Reference:https://blog.csdn.net/kanon122500000/article/details/57111153?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link
 
-loop_path = "/home/workspace/DeepLearning/PythonProgramming/data/battery"
+loop_path = "/home/workspace/BatteryDetect/data/battery"
 
 def check_if_dir(variable_path):
 	"loop each file under path, return real file"
@@ -21,8 +21,8 @@ def check_if_dir(variable_path):
 			read_file = variable_path + '/' + temp_list_each
 			print(read_file)			
 			if os.path.splitext(read_file)[-1] == '.txt':
-				with open('/home/workspace/DeepLearning/PythonProgramming/data/allbatteryconfig.txt', 'a') as file_object:
-					file_object.write(str(read_file))
+				with open('/home/workspace/BatteryDetect/data/allbatteryconfig.txt', 'a') as file_object:
+					file_object.write(str(read_file) + '\n')
 					filein = open(read_file, 'r')
 					#print(filein)				
 					for line in filein:
