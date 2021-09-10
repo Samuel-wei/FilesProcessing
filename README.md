@@ -7,31 +7,31 @@ Merge multiple file into a file
 [https://zhuanlan.zhihu.com/p/98124110](https://zhuanlan.zhihu.com/p/98124110)
 
 
-base/
+    base/
 
-├── fileA.txt
+    ├── fileA.txt
 
-├── fileA2.xls
+    ├── fileA2.xls
 
-├── fileA3.xls
+    ├── fileA3.xls
 
-├── fileA4.pdf
+    ├── fileA4.pdf
 
-├── sub1
+    ├── sub1
 
-│   ├── fileB.txt
+    │   ├── fileB.txt
 
-│   ├── fileB2.xls
+    │   ├── fileB2.xls
 
-│   └── fileB3.pdf
+    │   └── fileB3.pdf
 
-└── sub2
+    └── sub2
 
-    ├── fileB.txt
-    
-    ├── fileC2.xls
-    
-    └── fileC3.pdf
+        ├── fileB.txt
+
+        ├── fileC2.xls
+
+        └── fileC3.pdf
 
 
 Mergefile.py
