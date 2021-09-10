@@ -6,7 +6,6 @@ Merge multiple file into a file
 
 [https://zhuanlan.zhihu.com/p/98124110](https://zhuanlan.zhihu.com/p/98124110)
 
-
     base/
     ├── fileA.txt
     ├── fileA2.xls
@@ -34,6 +33,7 @@ Mergefile.py
     
     os.path.splitext()
     
+    
 ## read and write in .txt as lines
 
 [Python读取一个文件夹下的所有txt文件，并按行保存](https://blog.csdn.net/suyunzzz/article/details/104727729)
@@ -42,8 +42,22 @@ Mergefile.py
 
 Mergefile.py
 
+    os.listdir()   #processing list of directory
+    
+    os.path.isfile()  # Check the list of directory whether it is file?
+    
+    os.splitext()  #splitting the path to text for check the last extension name
+    
+    <file>.append() #add each line to list function
+
+
 ## Read a batch of file and write into the target file
 
 [Python 之批量读取文件](https://blog.csdn.net/kanon122500000/article/details/57111153?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link)
 
-os.listdir(dirname)可以列出dirname下的目录和文件
+    os.listdir(dirname) #可以列出dirname下的目录和文件
+    
+    with open(file) as file_object:  #Create new file with write and read and binary
+        file_object.write(file)        #Write contents to file   
+        open(file)                   #open file to read and write
+        <file>.close()               # close the above the open file
