@@ -49,6 +49,8 @@ Mergefile.py
     os.splitext()  #splitting the path to text for check the last extension name
     
     <file>.append() #add each line to list function
+    
+Mergefiles.py
 
 
 ## Read a batch of file and write into the target file
@@ -61,3 +63,5 @@ Mergefile.py
         file_object.write(file)        #Write contents to file   
         open(file)                   #open file to read and write
         <file>.close()               # close the above the open file
+        
+Mergefiles.py
