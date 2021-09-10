@@ -10,16 +10,17 @@ import os
 
 loop_path = "/home/workspace/BatteryDetect/data/battery"
 new_file = '/home/workspace/BatteryDetect/data/allbatteryconfig.txt'
+
 store_readable_file = []
 def check_if_dir(variable_path):
 	"loop each file under path, return real file"
 	temp_list = os.listdir(variable_path)
 	for temp_list_each in temp_list:
-		if os.path.isfile(variable_path + '/' + temp_list_each):
+		if os.path.isfile(variable_path + '/' + temp_list_each):  # Check whether it is file? if file going on. if path executing the else block.
 			read_file = variable_path + '/' + temp_list_each
 			if os.path.splitext(read_file)[-1] == '.txt':
 				store_readable_file.append(read_file) 
-				print(read_file)
+				# print(read_file)
 				return store_readable_file
 			else:
 				continue
@@ -27,7 +28,7 @@ def check_if_dir(variable_path):
 			check_if_dir(variable_path + '/' + temp_list_each)
 
 check_if_dir(loop_path)
-print(str(store_readable_file))
+# print(str(store_readable_file))
 
 # Reference:https://blog.csdn.net/kanon122500000/article/details/57111153?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link
 
@@ -41,7 +42,7 @@ def each_file_write(readable_files):
 			# loop write file contents with each lines				
 			for line in filein:
 				file_object.write(line)
-				print(line)
+				# print(line)
 			file_object.write('\n' + '\n')
 		filein.close()
 
