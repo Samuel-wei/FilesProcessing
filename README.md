@@ -5,6 +5,8 @@ Merge multiple file into a file
 # Merge txt file
 
 [https://zhuanlan.zhihu.com/p/98124110](https://zhuanlan.zhihu.com/p/98124110)
+
+
 base/
 ├── fileA.txt
 ├── fileA2.xls
