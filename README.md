@@ -8,17 +8,29 @@ Merge multiple file into a file
 
 
 base/
+
 ├── fileA.txt
+
 ├── fileA2.xls
+
 ├── fileA3.xls
+
 ├── fileA4.pdf
+
 ├── sub1
+
 │   ├── fileB.txt
+
 │   ├── fileB2.xls
+
 │   └── fileB3.pdf
+
 └── sub2
+
     ├── fileB.txt
+    
     ├── fileC2.xls
+    
     └── fileC3.pdf
 
 
