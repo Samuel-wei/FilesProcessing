@@ -8,8 +8,8 @@ import os
 # Traverse all txt file under path
 # Reference: https://cloud.tencent.com/developer/article/1742319
 
-loop_path = "/home/workspace/BatteryDetect/data/battery"
-new_file = '/home/workspace/BatteryDetect/data/allbatteryconfig.txt'
+loop_path = "/home/workspace/DahengImage/AcquisitionImages/suhigh20210914/0915v0"
+new_file = '/home/workspace/DahengImage/AcquisitionImages/suhigh20210914/0915v0/20210915config.txt'
 
 store_readable_file = []
 def check_if_dir(variable_path):
